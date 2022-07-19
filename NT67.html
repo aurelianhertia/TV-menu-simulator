@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TCL NT67chassis menu simulator</title>
+<script src="https://kit.fontawesome.com/cbe0c1710e.js" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+#primary_nav_wrap
+{
+	margin-top:15px
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+     
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:'Encode Sans Condensed', sans-serif;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:#ddd
+    }
+
+#primary_nav_wrap ul li:hover
+{
+	background:#2AEBD4;
+  
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+  	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+
+}
+</style>
+</head>
+<body>
+<br>
+<br>
+  <form>
+<input type="button" value="Go back!" onclick="history.back()">
+</form>
+
+  <h4><p>Please use the links below to access the menu<p/></h4>
+  
+
+<nav id="primary_nav_wrap">
+<ul>
+    <li><a href="#">Settings</a>
+       <ul>
+            <li><a href="#">Picture</a>
+              <ul>
+                    <li><a href="#">Picture preset</a>
+                       <ul>
+                          <li><a href="#">Standard</a></li>
+                          <li><a href="#">Dynamic</a></li>
+                          <li><a href="#">Natural</a></li>
+                          <li><a href="#">Movie</a></li>
+                          <li><a href="#">Stadium</a></li>
+                          <li><a href="#">Personal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Backlight 0->100</a></li>
+                    <li><a href="#">Brightness 0->100</a></li>
+                    <li><a href="#">Contrast 0->100</a></li>
+                    <li><a href="#">Saturation 0->100</a></li>
+                    <li><a href="#">Tint 0->100</a></li>
+                    <li><a href="#">Sharpness 0->100</a></li>
+                    <li><a href="#">Color temperature</a>
+                                <ul>
+                                  <li><a href="#">Cool</a></li>
+                                  <li><a href="#">Normal</a></li>
+                                  <li><a href="#">Warm</a></li>
+                                </ul>
+                              </li>
+                    <li><a href="#">Overscan - on/off</a></li>
+                    <li><a href="#">Eco settings</a>
+                                <ul>
+                                  <li><a href="#">Energy saving</a>
+                                    <ul>
+                                              <li><a href="#">Off</a></li>
+                                              <li><a href="#">Low</a></li>
+                                              <li><a href="#">High</a></li>
+                                            </ul>
+                                  </li>
+                                  <li><a href="#">Mix dimming - on/off</a></li>
+                                    </ul>
+                              </li>
+                    <li><a href="#">Advanced settings</a>
+                                  <ul>
+                                    <li><a href="#">Dynamic contrast - on/off</a></li>
+                                    <li><a href="#">Black stretch - on/off</a></li>
+                                    <li><a href="#">Flesh tone - on/off</a></li>
+                                    <li><a href="#">Gamma</a></li>
+                                    <li><a href="#">10p white balance - on/off</a></li>
+                                    <li><a href="#">Color space</a>
+                                            <ul>
+                                              <li><a href="#">Auto</a></li>
+                                              <li><a href="#">Native</a></li>
+                                              <li><a href="#">Custom</a></li>
+                                            </ul>
+                                          </li>
+                                    <li><a href="#">RGB mode</a>
+                                                <ul>
+                                                  <li><a href="#">Off</a></li>
+                                                  <li><a href="#">Red only</a></li>
+                                                  <li><a href="#">Green only</a></li>
+                                                  <li><a href="#">Blue only</a></li>
+                                                </ul>
+                                              </li>
+                                    <li><a href="#">Game mode - on/off</a></li>
+                                    <li><a href="#">MPEG NR</a>
+                                            <ul>
+                                              <li><a href="#">Off</a></li>
+                                              <li><a href="#">Low</a></li>
+                                              <li><a href="#">Middle</a></li>
+                                              <li><a href="#">High</a></li>
+                                            </ul>
+                                          </li>
+                                    <li><a href="#">Noise reduction</a>
+                                            <ul>
+                                              <li><a href="#">Off</a></li>
+                                              <li><a href="#">Low</a></li>
+                                              <li><a href="#">Middle</a></li>
+                                              <li><a href="#">High</a></li>
+                                            </ul>
+                                          </li>
+                                     <li><a href="#">Film mode - on/off</a></li>
+                                     <li><a href="#">Picture freeze - on/off</a></li>
+                                  </ul>
+                            </li>
+                    <li><a href="#">Picture reset - ok/cancel</a></li>
+                  </ul>
+            </li>
+            <li><a href="#">Sound</a>
+              <ul>
+                <li><a href="#">Sound preset</a>
+                   <ul>
+                          <li><a href="#">Music</a></li>
+                          <li><a href="#">Movie</a></li>
+                          <li><a href="#">Voice</a></li>
+                          <li><a href="#">Standard</a></li>
+                           <li><a href="#">Stadium</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">Bass enhancer</a>
+                        <ul>
+                          <li><a href="#">Off</a></li>
+                          <li><a href="#">Low</a></li>
+                          <li><a href="#">Middle</a></li>
+                          <li><a href="#">High</a></li>
+                        </ul>
+                      </li>
+                 <li><a href="#">Media intelligence - on/off</a></li>
+                 <li><a href="#">Graphic equalizer</a></li>
+                 <li><a href="#">Digital audio output</a>
+                        <ul>
+                          <li><a href="#">PCM</a></li>
+                          <li><a href="#">Auto</a></li>
+                         </ul>
+                      </li>
+                  <li><a href="#">Spdif delay 0->100</a></li>
+                   <li><a href="#">Audio delay 0->100</a></li>
+                   <li><a href="#">TV placement</a>
+                                <ul>
+                                  <li><a href="#">Desktop</a></li>
+                                  <li><a href="#">Wallmount</a></li>
+                                 </ul>
+                              </li>
+                   <li><a href="#">Dolby professional settings</a>
+                          <ul>
+                            <li><a href="#">TV speaker DAP output</a></li>
+                            <li><a href="#">External AVR encode output</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="#">Advanced setttings</a>
+                              <ul>
+                                <li><a href="#">Balance</a></li>
+                                <li><a href="#">Speaker - on/off</a></li>
+                                <li><a href="#">Speaker volumet 0->100</a></li>
+                                <li><a href="#">Headphone - on/off</a></li>
+                                <li><a href="#">Speaker volumet 0->100</a></li>
+                              </ul>
+                            </li>
+                 </ul>
+            </li>
+            <li><a href="#">Channel</a>
+               <ul>
+                  <li><a href="#">Channel scan</a>
+                     <ul>
+                        <li><a href="#">Country</a></li>
+                        <li><a href="#">Tuner mode</a></li>
+                        <li><a href="#">Automatic search</a></li>
+                        <li><a href="#">Automatic update</a></li>
+                        <li><a href="#">Analogue manual search</a></li>
+                        <li><a href="#">Antenna manual instalation</a></li>
+                      </ul>
+                         </li>
+                  <li><a href="#">Subtitle - on/off</a></li>
+                  <li><a href="#">Teletext</a>
+                    <ul>
+                        <li><a href="#">Decoding page language</a></li>
+                        <li><a href="#">Digital teletext language</a></li>
+                      </ul>
+                  </li>
+                </ul>
+            </li>
+           <li><a href="#">Network</a>
+                <ul>
+                  <li><a href="#">Internet connection - on/off</a></li>
+                  <li><a href="#">Interface</a>
+                    <ul>
+                        <li><a href="#">Ethernet</a></li>
+                        <li><a href="#">Wireless</a></li>
+                       </ul>
+                  </li>
+                  <li><a href="#">IP settings</a></li>
+                  <li><a href="#">Information</a></li>
+                  <li><a href="#">Connection test</a></li>
+                  <li><a href="#">DLNA - on/off</a></li>
+                  <li><a href="#">GuideON - on/off</a></li>
+                  <li><a href="#">TV remote</a></li>
+                  <li><a href="#">Netflix settings</a>
+                                <ul>
+                                  <li><a href="#">Deactivate</a></li>
+                                  <li><a href="#">ESN</a></li>
+                               </ul>
+                              </li>
+                  <li><a href="#">Wifi TV link</a></li>
+                </ul>
+              </li>
+          <li><a href="#">System</a>
+                    <ul>
+                      <li><a href="#">E-manual</a></li>
+                      <li><a href="#">Menu language</a></li>
+                      <li><a href="#">Timer</a>
+                        <ul>
+                              <li><a href="#">Time zone</a></li>
+                              <li><a href="#">Clock</a></li>
+                              <li><a href="#">Sleep timer</a></li>
+                              <li><a href="#">Auto standby</a></li>
+                            </ul>
+                      </li>
+                      <li><a href="#">Lock</a>
+                            <ul>
+                              <li><a href="#">Channel lock</a></li>
+                              <li><a href="#">Parental rating</a></li>
+                              <li><a href="#">Input lock</a></li>
+                              <li><a href="#">Front panel lock</a></li>
+                              <li><a href="#">Installation lock</a></li>
+                              <li><a href="#">Change password</a></li>
+                              <li><a href="#">Max volume</a></li>
+                              <li><a href="#">Clean all</a></li>
+                            </ul>
+                          </li>
+                        <li><a href="#">Input settings</a></li>
+                        <li><a href="#">Software update</a>
+                                    <ul>
+                                      <li><a href="#">By USB</a></li>
+                                      <li><a href="#">By Network</a></li>
+                                    </ul>
+                                  </li>
+                         <li><a href="#">Location</a>
+                                    <ul>
+                                      <li><a href="#">Home</a></li>
+                                      <li><a href="#">Shop</a></li>
+                                      <li><a href="#">Shop with demo</a></li>
+                                    </ul>
+                                  </li>
+                         <li><a href="#">Hbb TV - on/off</a></li>
+                         <li><a href="#">Advanced settings</a>
+                                      <ul>
+                                        <li><a href="#">DivX Registration</a></li>
+                                        <li><a href="#">DivX Deregistration</a></li>
+                                        <li><a href="#">T-link - on/off</a></li>
+                                      </ul>
+                                    </li>
+                         <li><a href="#">Auto source - on/off</a></li>
+                          <li><a href="#">Sports mode - on/off</a></li>
+                          <li><a href="#">Led indicator</a>
+                                    <ul>
+                                      <li><a href="#">Flashing</a></li>
+                                      <li><a href="#">Normal</a></li>
+                                      <li><a href="#">Off</a></li>
+                                    </ul>
+                                  </li>
+                          <li><a href="#">Reset shop - Yes/No</a></li>
+                    </ul>
+                  </li>
+          </ul>
+    </li>
+     
+     </ul>
+  
+ 
+ 
+ <!-- <li><a href="#">Test</a>
+    <ul>
+      <li><a href="#">Sub Menu 1</a></li>
+      <li><a href="#">Sub Menu 2</a></li>
+      <li><a href="#">Sub Menu 3</a></li>
+    </ul>
+  </li>-->
+ 
+      
+</ul>
+</nav>
+</body>
+</html>
